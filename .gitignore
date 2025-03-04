@@ -1,7 +1,3 @@
 # Ignore all executable files (no extension)
-*
-!*/
-!*.cpp*
-*.executable
+*.exe
 *.vscode
-!*.md
