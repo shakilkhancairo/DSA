@@ -40,12 +40,7 @@ int insert_element_by_position(int arr[], int value, int position)
 	}
 
 	//The arraysize is 1, so simply replace that with given value. No loop is required.
-	if(MAX == 1)
-	{
-		arr[MAX-1] = value;
-		printf("\nElement %d was added in position %d.", value, position);
-		return 0; 
-	}
+	
 
 	//If array size is greater than 1, we shift all elements
 	//by 1 position to create space for the new element to be inserted.
@@ -149,7 +144,7 @@ int main()
 	display_array(arr);							//display array
 
 	//BELOW ARE SOME TESTS ON OUT CODE	
-	insert_element_by_position(arr, 89, 3);		//insert 89 in position 3
+	insert_element_by_position(arr, 89, 5);		//insert 89 in position 3
 	display_array(arr);							//display array
 
 	delete_element_by_position(arr, 4);			//delete element of position 4
